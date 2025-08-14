@@ -13,9 +13,6 @@ body {
 body {
   color: var(--text_color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   padding-top: 50px;
 }
 
@@ -35,3 +32,24 @@ a {
   margin: 0 auto;
   padding-inline: 50px;
 }
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-mons);
+  margin-bottom: 15px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+  h2 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 24px;
+    }
+  }
