@@ -2,14 +2,14 @@ import s from './LinkBtn.module.css';
 
 interface IProps {
   text: string;
-  classname?: string;
+  className?: string;
   href: string;
-  target: string;
+  target?: string;
 }
 
-export default function LinkBtn({ href, text, target, classname = '' }: IProps) {
+export default function LinkBtn({ href, text, target = '', className = '' }: IProps) {
   return (
-    <a href={href} target={target} className={s.btn + classname}>
+    <a href={href} target={target} className={s.btn + '  ' + className}>
       {text}
     </a>
   );

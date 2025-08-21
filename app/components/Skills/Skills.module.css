@@ -3,7 +3,11 @@
     grid-template-columns: 120px 1fr;
     gap: 30px;
     align-items: center;
+}
+
+.wrap:not(:last-child) {
     margin-bottom: 30px;
+
 }
 
 .title {

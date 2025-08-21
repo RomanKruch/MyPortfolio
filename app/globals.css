@@ -40,6 +40,10 @@ h2 {
   margin-bottom: 15px;
 }
 
+section {
+    margin-bottom: 50px;
+}
+
 /* Tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
   h2 {

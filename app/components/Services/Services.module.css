@@ -1,0 +1,40 @@
+.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.item {
+    background: #fff;
+    box-shadow: 0 0 5px #666;
+    padding: 25px;
+}
+
+.item_title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-mons);
+    margin-bottom: 15px;
+}
+
+.item_subtitle {
+    font-size: 18px;
+    font-family: var(--font-rob);
+    margin-bottom: 15px;
+}
+
+.item_list {
+    padding-left: 15px;
+    list-style: disc;
+    margin-bottom: 30px;
+}
+
+.item_feature {
+    font-size: 16px;
+    font-family: var(--font-rob);
+}

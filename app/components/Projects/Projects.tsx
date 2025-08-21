@@ -8,21 +8,24 @@ const projects = [
   {
     img: dreamHousePrev,
     title: 'Dream House',
-    description: 'Descrrrrr..',
+    description:
+      'Apartment Renovation Landing Page – modern design with dynamic elements, interactive gallery, and engaging features to attract clients.',
     liveHref: '/',
     hubHref: '/',
   },
   {
     img: brudenPrev,
     title: 'Bruden',
-    description: 'Descrrrrr..',
+    description:
+      'Clothing & Accessories E-commerce Store – fully functional online shop with user registration, personal accounts, and an easy-to-use admin panel.',
     liveHref: '/',
     hubHref: '/',
   },
   {
     img: travelPrev,
     title: 'Travel',
-    description: 'Descrrrrr..',
+    description:
+      'Tour Search Website – simple and user-friendly service for quickly finding exciting travel opportunities.',
     liveHref: '/',
     hubHref: '/',
   },
