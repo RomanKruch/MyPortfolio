@@ -1,22 +1,27 @@
 .list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-items: center; */
+    justify-content: center;
     gap: 25px;
 }
 
 .item {
+    width: 320px;
     background: #fff;
     box-shadow: 0 0 5px #666;
-    padding: 25px;
+    padding: 25px 25px 70px;
+    position: relative;
 }
 
 .item_title {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 1fr;
     gap: 15px;
     align-items: center;
 
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     font-family: var(--font-mons);
     margin-bottom: 15px;
@@ -37,4 +42,15 @@
 .item_feature {
     font-size: 16px;
     font-family: var(--font-rob);
+}
+
+.item_feature:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item_btn {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    bottom: 25px;
 }

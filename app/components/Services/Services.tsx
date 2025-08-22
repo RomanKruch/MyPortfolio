@@ -11,25 +11,31 @@ const services = [
     subtitle: 'Modern and responsive websites',
     features: ['Clean UI design', 'Responsive layouts', 'Optimized performance'],
     icon: WebDevIcon,
+    linkText: 'Get a quote',
+    linkHref: '/',
   },
   {
     title: 'Backend API',
     subtitle: 'Secure and scalable solutions',
-    features: ['RESTful APIs', 'JWT authentication', 'Database integration'],
+    features: ['REST APIs', 'JWT authentication', 'Database integration'],
     icon: BackApiIcon,
+    linkText: 'Request API',
+    linkHref: '/',
   },
   {
     title: 'E-commerce Solutions',
     subtitle: 'Online stores with full functionality',
     features: ['Product management', 'Payment integration', 'Admin dashboard'],
     icon: CommerceIcon,
+    linkText: 'Get solution',
+    linkHref: '/',
   },
-  {
-    title: 'Website Optimization',
-    subtitle: 'Faster, SEO-friendly websites',
-    features: ['SEO improvements', 'Performance tuning', 'Better UX'],
-    icon: WebSeoIcon,
-  },
+  // {
+  //   title: 'Website Optimization',
+  //   subtitle: 'Faster, SEO-friendly websites',
+  //   features: ['SEO improvements', 'Performance tuning', 'Better UX'],
+  //   icon: WebSeoIcon,
+  // },
 ];
 
 export default function Services() {
@@ -43,6 +49,8 @@ export default function Services() {
             title={item.title}
             subtitle={item.subtitle}
             features={item.features}
+            linkText={item.linkText}
+            linkHref={item.linkHref}
             key={item.title}
           />
         ))}

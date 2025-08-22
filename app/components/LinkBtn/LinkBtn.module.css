@@ -1,4 +1,6 @@
 .btn {
+  display: block;
+  width: fit-content;
   padding: 14px 28px;
   border-radius: 8px;
   font-weight: 400;

@@ -1,5 +1,6 @@
 import About from './components/About/About';
 import Hero from './components/Hero/Hero';
+import HireMeForm from './components/HireMeForm/HireMeForm';
 import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services';
 import Skills from './components/Skills/Skills';
@@ -15,6 +16,7 @@ export default function Home() {
           <Skills />
           <Projects />
           <Services />
+          <HireMeForm />
         </div>
       </main>
       <footer className={styles.footer}></footer>

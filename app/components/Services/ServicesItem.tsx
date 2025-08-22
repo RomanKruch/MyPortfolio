@@ -6,9 +6,11 @@ interface IProps {
   title: string;
   subtitle: string;
   features: string[];
+  linkText: string;
+  linkHref: string;
 }
 
-export default function ServicesItem({ Icon, title, subtitle, features }: IProps) {
+export default function ServicesItem({ Icon, title, subtitle, features, linkText, linkHref }: IProps) {
   return (
     <li className={s.item}>
       <h3 className={s.item_title}>
@@ -23,7 +25,7 @@ export default function ServicesItem({ Icon, title, subtitle, features }: IProps
         ))}
       </ul>
 
-      <LinkBtn text="Get a quote" href="/" />
+      <LinkBtn text={linkText} href={linkHref} className={s.item_btn} />
     </li>
   );
 }
