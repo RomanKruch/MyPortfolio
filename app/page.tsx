@@ -1,4 +1,5 @@
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import HireMeForm from './components/HireMeForm/HireMeForm';
 import Projects from './components/Projects/Projects';
@@ -19,7 +20,7 @@ export default function Home() {
           <HireMeForm />
         </div>
       </main>
-      <footer className={styles.footer}></footer>
+      <Footer />
     </>
   );
 }
