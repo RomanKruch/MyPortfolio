@@ -18,6 +18,7 @@
 
 .list {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     list-style: none;
 }
@@ -63,3 +64,33 @@
 
 }
 
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .wrap {
+        grid-template-columns: 1fr;
+    }
+
+     .title {
+       display: none;
+    }
+
+    .list {
+        justify-content: center;
+    }
+
+    .link {
+        width: 140px;
+        height: 70px;
+    }
+
+    .item_title {
+        font-size: 14px;
+    }
+}

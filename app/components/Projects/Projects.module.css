@@ -1,5 +1,6 @@
 .list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     list-style: none;
@@ -38,8 +39,33 @@
 
 .btn_wrap {
     display: flex;
+    justify-content: center;
     gap: 10px;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 50%;
+    translate: -50%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
 }

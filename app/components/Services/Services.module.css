@@ -11,6 +11,7 @@
     width: 320px;
     background: #fff;
     box-shadow: 0 0 5px #666;
+    border-radius: 10px;
     padding: 25px 25px 70px;
     position: relative;
 }
@@ -53,4 +54,24 @@
     left: 50%;
     translate: -50% 0;
     bottom: 25px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+   
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .item_title {
+        font-size: 20px;
+    }
+
+    .item_subtitle{
+        font-size: 14px;
+    }
+
+    .item_feature {
+        font-size: 14px;
+    }
 }

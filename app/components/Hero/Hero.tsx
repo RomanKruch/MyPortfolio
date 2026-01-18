@@ -15,7 +15,7 @@ export default function Hero() {
           <LinkBtn text="View Projects" href="/" />
         </div>
       </div>
-      <Image src={img} alt="Fullstack Web Developer img" height={400} />
+      <Image src={img} alt="Fullstack Web Developer img" height={400} className={s.img} />
     </section>
   );
 }
