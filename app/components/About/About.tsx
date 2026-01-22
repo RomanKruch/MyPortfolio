@@ -1,9 +1,12 @@
 import s from './About.module.css';
+import Image from 'next/image';
+import img from '../../assets/hero.png';
 
 export default function About() {
   return (
     <section className={s.section}>
-      <div className={s.img}></div>
+      <Image src={img} alt="Fullstack Web Developer img" className={s.img} />
+
       <div className={s.wrap}>
         <h2>About Me</h2>
         <p className={s.description}>

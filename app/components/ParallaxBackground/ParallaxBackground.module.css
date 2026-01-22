@@ -1,0 +1,13 @@
+.background {
+  position: fixed;
+  /* height: 150vh; */
+  inset: 0;
+  z-index: -10;
+  background-image:
+    linear-gradient(180deg, rgba(224,231,255,0.3), rgba(255,255,255,0.5)),
+    url("../../assets/bg.png"); /* твоя ілюстрація */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  /* filter: blur(5px); */
+}

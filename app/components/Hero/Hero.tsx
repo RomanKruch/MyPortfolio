@@ -1,5 +1,6 @@
 import s from './Hero.module.css';
 import Image from 'next/image';
+// import img from '../../assets/hero2.png';
 import img from '../../assets/Hero_img.png';
 import LinkBtn from '../LinkBtn/LinkBtn';
 

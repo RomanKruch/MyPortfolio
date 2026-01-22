@@ -1,5 +1,5 @@
 :root {
-  --hover_color: #4856FF;
+  --hover_color: #456cf9;
   --text_color: #1C202A;
   --background: #f8fbff;
 }
@@ -12,7 +12,7 @@ body {
 
 body {
   color: var(--text_color);
-  background: var(--background);
+  /* background: red; */
   padding-top: 50px;
 }
 
@@ -38,6 +38,7 @@ h2 {
   font-weight: 700;
   font-family: var(--font-mons);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 section {

@@ -34,7 +34,7 @@ const projects = [
 export default function Projects() {
   return (
     <section>
-      <h2>Projects</h2>
+      <h2>My Projects</h2>
 
       <ul className={s.list}>
         {projects.map(item => (
