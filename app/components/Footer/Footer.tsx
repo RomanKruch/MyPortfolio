@@ -1,15 +1,18 @@
 import s from './Footer.module.css';
+import { FooterMessages } from '../../../messages/types';
 
-export default function Footer() {
+interface IProps {
+  messages: FooterMessages;
+}
+
+export default function Footer({ messages }: IProps) {
   return (
     <footer className={s.footer}>
       <div className={s.container}>
         {/* Logo + About */}
         <div className={s.section}>
           <h2 className={s.logo}>MyPortfolio</h2>
-          <p className={s.text}>
-            Building modern websites and applications with passion for design and performance.
-          </p>
+          <p className={s.text}>{messages.text}</p>
         </div>
 
         {/* Links */}
@@ -44,13 +47,15 @@ export default function Footer() {
                 @KrychRoman
               </a>
             </li>
-            <li>Location: Kyiv, Ukraine</li>
+            <li>{messages.location}</li>
           </ul>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className={s.bottom}>© {new Date().getFullYear()} MyPortfolio. All rights reserved.</div>
+      <div className={s.bottom}>
+        © {new Date().getFullYear()} MyPortfolio. {messages.copyright}
+      </div>
     </footer>
   );
 }

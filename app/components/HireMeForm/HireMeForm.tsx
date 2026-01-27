@@ -1,6 +1,12 @@
 'use client';
 import { useState } from 'react';
 import s from './HireMeForm.module.css';
+import { HireMeMessages } from '../../../messages/types';
+import { option } from 'framer-motion/client';
+
+interface IProps {
+  messages: HireMeMessages;
+}
 
 const initial = {
   name: '',
@@ -12,7 +18,7 @@ const initial = {
   brief: '',
 };
 
-export default function HireMeForm() {
+export default function HireMeForm({ messages }: IProps) {
   const [form, setForm] = useState(initial);
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
@@ -45,15 +51,15 @@ export default function HireMeForm() {
 
   return (
     <section>
-      <h2>Hire me</h2>
+      <h2>{messages.title}</h2>
       <form onSubmit={onSubmit} className={s.form}>
         <div className={s.wrap}>
           <label className={s.label}>
-            Name
+            {messages.nameLabel}
             <input
               className={s.input}
               name="name"
-              placeholder="Your name*"
+              placeholder={messages.namePlaceholder}
               value={form.name}
               onChange={onChange}
               required
@@ -78,31 +84,28 @@ export default function HireMeForm() {
             <input
               className={s.input}
               name="telegram"
-              placeholder="@username (optional)"
+              placeholder={messages.telegramPlaceholder}
               value={form.telegram}
               onChange={onChange}
             />
           </label>
 
           <label className={s.label}>
-            Project Type
+            {messages.projectTypeLabel}
             <select
               className={s.input}
               name="projectType"
               value={form.projectType}
               onChange={onChange}
             >
-              <option>Landing / Website</option>
-              <option>E-commerce</option>
-              <option>Web App (Full-stack)</option>
-              <option>Backend API</option>
-              <option>Optimization / Fixes</option>
-              <option>Other</option>
+              {messages.projectTypeOptions.map(option => (
+                <option key={option}>{option}</option>
+              ))}
             </select>
           </label>
 
           <label className={s.label}>
-            Budget range
+            {messages.budgetLabel}
             <select className={s.input} name="budget" value={form.budget} onChange={onChange}>
               <option>&lt;$200</option>
               <option>$200-500</option>
@@ -113,22 +116,21 @@ export default function HireMeForm() {
           </label>
 
           <label className={s.label}>
-            Timeline
+            {messages.timelineLabel}
             <select className={s.input} name="timeline" value={form.timeline} onChange={onChange}>
-              <option>1-2 weeks</option>
-              <option>2-4 weeks</option>
-              <option>1-2 months</option>
-              <option>Not sure</option>
+              {messages.timelineOptions.map(option => (
+                <option key={option}>{option}</option>
+              ))}
             </select>
           </label>
         </div>
 
         <label className={s.textarea_label}>
-          Short description
+          {messages.descriptionLabel}
           <textarea
             className={`${s.input} ${s.textarea}`}
             name="brief"
-            placeholder="Describe your project…*"
+            placeholder={messages.descriptionPlaceholder}
             value={form.brief}
             onChange={onChange}
             required
@@ -137,7 +139,7 @@ export default function HireMeForm() {
         </label>
 
         <button disabled={loading} className={s.btn}>
-          {loading ? 'Sending…' : 'Send Request'}
+          {loading ? messages.sendingBtn : messages.sendBtn}
         </button>
 
         {msg && <p className={s.message}>{msg}</p>}

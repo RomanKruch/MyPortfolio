@@ -1,0 +1,112 @@
+{
+  "Hero": {
+    "meeting": "Hi, I’m Roman 👋",
+    "hireBtn": "Hire me",
+    "projectsBtn": "View Projects"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "projects": [
+      {
+        "title": "Dream House",
+        "description": "Apartment Renovation Landing Page – modern design with dynamic elements, interactive gallery, and engaging features to attract clients."
+      },
+      {
+        "title": "Bruden",
+        "description": "Clothing & Accessories E-commerce Store – fully functional online shop with user registration, personal accounts, and an easy-to-use admin panel."
+      },
+      {
+        "title": "Travel",
+        "description": "Tour Search Website – simple and user-friendly service for quickly finding exciting travel opportunities."
+      }
+    ]
+  },
+  "About": {
+    "title": "About Me",
+    "description": "I’m Roman, a passionate Web Developer with a focus on building modern, fast, and user-friendly applications.<br /> With expertise in React, Next.js, and NestJS, I create seamless front-end experiences and robust back-end systems.<br /> Beyond coding, I’m constantly exploring new technologies to stay ahead in the ever-evolving tech world. My goal is simple — to deliver clean, maintainable, and impactful digital solutions that make a difference.",
+    "items": [
+      {
+        "title": "3+",
+        "subtitle": "Completed projects"
+      },
+      {
+        "title": "1+",
+        "subtitle": "Year coding experience"
+      },
+      {
+        "title": "100%",
+        "subtitle": "Client satisfaction"
+      }
+    ]
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Services": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Web Development",
+        "subtitle": "Modern and responsive websites",
+        "features": [
+          "Clean UI design",
+          "Responsive layouts",
+          "Optimized performance"
+        ],
+        "linkText": "Get a quote"
+      },
+      {
+        "title": "Backend API",
+        "subtitle": "Secure and scalable solutions",
+        "features": [
+          "REST APIs",
+          "JWT authentication",
+          "Database integration"
+        ],
+        "linkText": "Request API"
+      },
+      {
+        "title": "E-commerce Solutions",
+        "subtitle": "Online stores with full functionality",
+        "features": [
+          "Product management",
+          "Payment integration",
+          "Admin dashboard"
+        ],
+        "linkText": "Get solution"
+      }
+    ]
+  },
+  "HireMe": {
+    "title": "Hire me",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name*",
+    "telegramPlaceholder": "@username (optional)",
+    "projectTypeLabel": "Project Type",
+    "projectTypeOptions": [
+      "Landing / Website",
+      "E-commerce",
+      "Web App (Full-stack)",
+      "Backend API",
+      "Optimization / Fixes",
+      "Other"
+    ],
+    "budgetLabel": "Budget range",
+    "timelineLabel": "Timeline",
+    "timelineOptions": [
+      "1-2 weeks",
+      "2-4 weeks",
+      "1-2 months",
+      "Not sure"
+    ],
+    "descriptionLabel": "Short description",
+    "descriptionPlaceholder": "Describe your project…*",
+    "sendingBtn": "Sending…",
+    "sendBtn": "Send Request"
+  },
+  "Footer": {
+    "text": "Building modern websites and applications with passion for design and performance.",
+    "location": "Location: Kyiv, Ukraine",
+    "copyright": "All rights reserved."
+  }
+}

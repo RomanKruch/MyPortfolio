@@ -3,17 +3,23 @@ import Image from 'next/image';
 // import img from '../../assets/hero2.png';
 import img from '../../assets/Hero_img.png';
 import LinkBtn from '../LinkBtn/LinkBtn';
+import { HeroMessages } from '../../../messages/types';
 
-export default function Hero() {
+interface IProps {
+  messages: HeroMessages;
+}
+
+export default function Hero({ messages }: IProps) {
+  // const t = serverSideTranslations();
   return (
     <section className={s.section}>
       <div className={s.wrap}>
-        <h2 className={s.meeting}>Hi, I’m Roman 👋</h2>
+        <h2 className={s.meeting}>{messages.meeting}</h2>
         <h1 className={s.title}>Fullstack Web Developer</h1>
         <p className={s.subtitle}>React | Next.js | NestJS | Express | MongoDB | PostgreSQL</p>
         <div className={s.btn_wrap}>
-          <LinkBtn text="Hire me" href="/" />
-          <LinkBtn text="View Projects" href="/" />
+          <LinkBtn text={messages.hireBtn} href="/" />
+          <LinkBtn text={messages.projectsBtn} href="/" />
         </div>
       </div>
       <Image src={img} alt="Fullstack Web Developer img" height={400} className={s.img} />

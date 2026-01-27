@@ -2,32 +2,25 @@ import s from './Services.module.css';
 import WebDevIcon from '../../assets/icons/WebDev.icon';
 import BackApiIcon from '../../assets/icons/BackApi.icon';
 import CommerceIcon from '../../assets/icons/Commerce.icon';
-import WebSeoIcon from '../../assets/icons/WebSeo.icon';
+// import WebSeoIcon from '../../assets/icons/WebSeo.icon';
 import ServicesItem from './ServicesItem';
+import { ServicesMessages } from '../../../messages/types';
+
+interface IProps {
+  messages: ServicesMessages;
+}
 
 const services = [
   {
-    title: 'Web Development',
-    subtitle: 'Modern and responsive websites',
-    features: ['Clean UI design', 'Responsive layouts', 'Optimized performance'],
     icon: WebDevIcon,
-    linkText: 'Get a quote',
     linkHref: '/',
   },
   {
-    title: 'Backend API',
-    subtitle: 'Secure and scalable solutions',
-    features: ['REST APIs', 'JWT authentication', 'Database integration'],
     icon: BackApiIcon,
-    linkText: 'Request API',
     linkHref: '/',
   },
   {
-    title: 'E-commerce Solutions',
-    subtitle: 'Online stores with full functionality',
-    features: ['Product management', 'Payment integration', 'Admin dashboard'],
     icon: CommerceIcon,
-    linkText: 'Get solution',
     linkHref: '/',
   },
   // {
@@ -38,20 +31,20 @@ const services = [
   // },
 ];
 
-export default function Services() {
+export default function Services({ messages }: IProps) {
   return (
     <section>
-      <h2>Services</h2>
+      <h2>{messages.title}</h2>
       <ul className={s.list}>
-        {services.map(item => (
+        {services.map((item, i) => (
           <ServicesItem
             Icon={item.icon}
-            title={item.title}
-            subtitle={item.subtitle}
-            features={item.features}
-            linkText={item.linkText}
+            title={messages.items[i].title}
+            subtitle={messages.items[i].subtitle}
+            features={messages.items[i].features}
+            linkText={messages.items[i].linkText}
             linkHref={item.linkHref}
-            key={item.title}
+            key={messages.items[i].title}
           />
         ))}
       </ul>

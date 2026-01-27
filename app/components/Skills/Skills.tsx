@@ -12,6 +12,11 @@ import PostmanIcon from '../../assets/icons/Postman.icon';
 import FigmaIcon from '../../assets/icons/Figma.icon';
 import CloudinaryIcon from '../../assets/icons/Cloudinary.icon';
 import SkillsItem from './SkillsItem';
+import { SkillsMessages } from '../../../messages/types';
+
+interface IProps {
+  messages: SkillsMessages;
+}
 
 const skills = {
   frontend: [
@@ -34,10 +39,10 @@ const skills = {
   ],
 };
 
-export default function Skills() {
+export default function Skills({ messages }: IProps) {
   return (
     <section>
-      <h2>Skills</h2>
+      <h2>{messages.title}</h2>
 
       <div className={s.wrap}>
         <h3 className={s.title}>Frontend</h3>
