@@ -6,20 +6,20 @@
   },
   "Projects": {
     "title": "My Projects",
-    "projects": [
-      {
+    "projects": {
+      "dreamHouse": {
         "title": "Dream House",
         "description": "Apartment Renovation Landing Page – modern design with dynamic elements, interactive gallery, and engaging features to attract clients."
       },
-      {
+      "bruden": {
         "title": "Bruden",
         "description": "Clothing & Accessories E-commerce Store – fully functional online shop with user registration, personal accounts, and an easy-to-use admin panel."
       },
-      {
+      "travel": {
         "title": "Travel",
         "description": "Tour Search Website – simple and user-friendly service for quickly finding exciting travel opportunities."
       }
-    ]
+    }
   },
   "About": {
     "title": "About Me",
@@ -44,8 +44,8 @@
   },
   "Services": {
     "title": "Services",
-    "items": [
-      {
+    "items": {
+      "webDev": {
         "title": "Web Development",
         "subtitle": "Modern and responsive websites",
         "features": [
@@ -55,7 +55,7 @@
         ],
         "linkText": "Get a quote"
       },
-      {
+      "backApi": {
         "title": "Backend API",
         "subtitle": "Secure and scalable solutions",
         "features": [
@@ -65,7 +65,7 @@
         ],
         "linkText": "Request API"
       },
-      {
+      "commerce": {
         "title": "E-commerce Solutions",
         "subtitle": "Online stores with full functionality",
         "features": [
@@ -75,7 +75,7 @@
         ],
         "linkText": "Get solution"
       }
-    ]
+    }
   },
   "HireMe": {
     "title": "Hire me",

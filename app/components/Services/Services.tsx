@@ -4,22 +4,30 @@ import BackApiIcon from '../../assets/icons/BackApi.icon';
 import CommerceIcon from '../../assets/icons/Commerce.icon';
 // import WebSeoIcon from '../../assets/icons/WebSeo.icon';
 import ServicesItem from './ServicesItem';
-import { ServicesMessages } from '../../../messages/types';
+import { Messages, ServicesItemsKeys } from '../../../messages/types';
+import { JSX } from 'react';
 
 interface IProps {
-  messages: ServicesMessages;
+  messages: Messages['Services'];
 }
 
-const services = [
+const services: {
+  id: ServicesItemsKeys;
+  icon: () => JSX.Element;
+  linkHref: string;
+}[] = [
   {
+    id: 'webDev',
     icon: WebDevIcon,
     linkHref: '/',
   },
   {
+    id: 'backApi',
     icon: BackApiIcon,
     linkHref: '/',
   },
   {
+    id: 'commerce',
     icon: CommerceIcon,
     linkHref: '/',
   },
@@ -36,17 +44,21 @@ export default function Services({ messages }: IProps) {
     <section>
       <h2>{messages.title}</h2>
       <ul className={s.list}>
-        {services.map((item, i) => (
-          <ServicesItem
-            Icon={item.icon}
-            title={messages.items[i].title}
-            subtitle={messages.items[i].subtitle}
-            features={messages.items[i].features}
-            linkText={messages.items[i].linkText}
-            linkHref={item.linkHref}
-            key={messages.items[i].title}
-          />
-        ))}
+        {services.map(item => {
+          const text = messages.items[item.id];
+
+          return (
+            <ServicesItem
+              Icon={item.icon}
+              title={text.title}
+              subtitle={text.subtitle}
+              features={text.features}
+              linkText={text.linkText}
+              linkHref={item.linkHref}
+              key={text.title}
+            />
+          );
+        })}
       </ul>
     </section>
   );

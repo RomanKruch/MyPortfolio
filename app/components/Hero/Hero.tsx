@@ -3,10 +3,10 @@ import Image from 'next/image';
 // import img from '../../assets/hero2.png';
 import img from '../../assets/Hero_img.png';
 import LinkBtn from '../LinkBtn/LinkBtn';
-import { HeroMessages } from '../../../messages/types';
+import { Messages } from '../../../messages/types';
 
 interface IProps {
-  messages: HeroMessages;
+  messages: Messages['Hero'];
 }
 
 export default function Hero({ messages }: IProps) {

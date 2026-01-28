@@ -1,11 +1,10 @@
 'use client';
 import { useState } from 'react';
 import s from './HireMeForm.module.css';
-import { HireMeMessages } from '../../../messages/types';
-import { option } from 'framer-motion/client';
+import { Messages } from '../../../messages/types';
 
 interface IProps {
-  messages: HireMeMessages;
+  messages: Messages['HireMe'];
 }
 
 const initial = {

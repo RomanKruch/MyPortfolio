@@ -1,8 +1,8 @@
 import s from './Footer.module.css';
-import { FooterMessages } from '../../../messages/types';
+import { Messages } from '../../../messages/types';
 
 interface IProps {
-  messages: FooterMessages;
+  messages: Messages['Footer'];
 }
 
 export default function Footer({ messages }: IProps) {

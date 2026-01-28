@@ -12,10 +12,10 @@ import PostmanIcon from '../../assets/icons/Postman.icon';
 import FigmaIcon from '../../assets/icons/Figma.icon';
 import CloudinaryIcon from '../../assets/icons/Cloudinary.icon';
 import SkillsItem from './SkillsItem';
-import { SkillsMessages } from '../../../messages/types';
+import { Messages } from '../../../messages/types';
 
 interface IProps {
-  messages: SkillsMessages;
+  messages: Messages['Skills'];
 }
 
 const skills = {
