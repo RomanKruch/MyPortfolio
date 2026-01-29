@@ -8,7 +8,7 @@ import Services from '../components/Services/Services';
 import Skills from '../components/Skills/Skills';
 import styles from './page.module.css';
 import { Messages } from '../../messages/types';
-
+import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
 
 interface IProps {
   messages: Messages;
@@ -17,18 +17,19 @@ interface IProps {
 export default function Home({ messages }: IProps) {
   return (
     <>
+      <LanguageSwitcher />
       <main className={styles.main}>
         <ParallaxBackground />
         <div className="container">
-          <Hero messages={messages.Hero}/>
-          <Projects messages={messages.Projects}/>
-          <About messages={messages.About}/>
-          <Skills messages={messages.Skills}/>
-          <Services messages={messages.Services}/>
-          <HireMeForm messages={messages.HireMe}/>
+          <Hero messages={messages.Hero} />
+          <Projects messages={messages.Projects} />
+          <About messages={messages.About} />
+          <Skills messages={messages.Skills} />
+          <Services messages={messages.Services} />
+          <HireMeForm messages={messages.HireMe} />
         </div>
       </main>
-      <Footer messages={messages.Footer}/>
+      <Footer messages={messages.Footer} />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import s from './Footer.module.css';
 import { Messages } from '../../../messages/types';
+import UkraineIcon from '../../assets/icons/UkraineIcon';
+import { style } from 'framer-motion/client';
 
 interface IProps {
   messages: Messages['Footer'];
@@ -47,7 +49,9 @@ export default function Footer({ messages }: IProps) {
                 @KrychRoman
               </a>
             </li>
-            <li>{messages.location}</li>
+            <li className={s.location}>
+              {messages.location} <UkraineIcon />
+            </li>
           </ul>
         </div>
       </div>
