@@ -6,6 +6,8 @@
   },
   "Projects": {
     "title": "My Projects",
+    "liveBtn": "Live",
+    "githubBtn": "GitHub",
     "projects": {
       "dreamHouse": {
         "title": "Dream House",

@@ -52,6 +52,8 @@ export default function Projects({ messages }: IProps) {
               description={text.description}
               hubHref={item.hubHref}
               liveHref={item.liveHref}
+              githubBtn={messages.githubBtn}
+              liveBtn={messages.liveBtn}
               key={text.title}
             />
           );

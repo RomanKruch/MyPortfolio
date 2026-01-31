@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Montserrat, Roboto } from 'next/font/google';
 import { Locale } from '../../messages/config';
-import '../globals.css';
+import './globals.css';
 import Home from './page';
 
 const MontserratSans = Montserrat({

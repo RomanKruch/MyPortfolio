@@ -6,6 +6,8 @@
     },
     "Projects": {
         "title": "Мої проєкти",
+        "liveBtn": "Переглянути",
+        "githubBtn": "GitHub",
         "projects": {
             "dreamHouse": {
                 "title": "Dream House",
