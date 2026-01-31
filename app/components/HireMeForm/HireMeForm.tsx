@@ -49,7 +49,7 @@ export default function HireMeForm({ messages }: IProps) {
   };
 
   return (
-    <section>
+    <section id="hireMe">
       <h2>{messages.title}</h2>
       <form onSubmit={onSubmit} className={s.form}>
         <div className={s.wrap}>

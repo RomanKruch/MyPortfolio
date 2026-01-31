@@ -19,17 +19,17 @@ const services: {
   {
     id: 'webDev',
     icon: WebDevIcon,
-    linkHref: '/',
+    linkHref: '#hireMe',
   },
   {
     id: 'backApi',
     icon: BackApiIcon,
-    linkHref: '/',
+    linkHref: '#hireMe',
   },
   {
     id: 'commerce',
     icon: CommerceIcon,
-    linkHref: '/',
+    linkHref: '#hireMe',
   },
   // {
   //   title: 'Website Optimization',

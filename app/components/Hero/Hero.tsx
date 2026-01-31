@@ -10,7 +10,6 @@ interface IProps {
 }
 
 export default function Hero({ messages }: IProps) {
-  // const t = serverSideTranslations();
   return (
     <section className={s.section}>
       <div className={s.wrap}>
@@ -18,8 +17,8 @@ export default function Hero({ messages }: IProps) {
         <h1 className={s.title}>Fullstack Web Developer</h1>
         <p className={s.subtitle}>React | Next.js | NestJS | Express | MongoDB | PostgreSQL</p>
         <div className={s.btn_wrap}>
-          <LinkBtn text={messages.hireBtn} href="/" />
-          <LinkBtn text={messages.projectsBtn} href="/" />
+          <LinkBtn text={messages.hireBtn} href="#hireMe" />
+          <LinkBtn text={messages.projectsBtn} href="#projects" />
         </div>
       </div>
       <Image src={img} alt="Fullstack Web Developer img" height={400} className={s.img} />

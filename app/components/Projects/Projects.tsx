@@ -38,7 +38,7 @@ const projects: {
 
 export default function Projects({ messages }: IProps) {
   return (
-    <section>
+    <section id="projects">
       <h2>{messages.title}</h2>
 
       <ul className={s.list}>
