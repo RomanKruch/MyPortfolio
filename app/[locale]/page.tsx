@@ -11,10 +11,13 @@ import { Messages } from '../../messages/types';
 import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
 
 interface IProps {
-  messages: Messages;
+  params: Promise<{ locale: string }>;
 }
 
-export default function Home({ messages }: IProps) {
+export default async function Home({ params }: IProps) {
+  const { locale } = await params;
+
+  const messages: Messages = (await import(`../../messages/${locale}.json`)).default;
   return (
     <>
       <LanguageSwitcher />

@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import styles from './LanguageSwitcher.module.css';
-import { locales } from '../../../i18n/config';
+import { locales } from '../../../messages/config';
 import UkraineIcon from '../../assets/icons/UkraineIcon';
 import UnitedKingdomIcon from '../../assets/icons/UnitedKingdomIcon';
 
