@@ -19,23 +19,23 @@ export default function Footer({ messages }: IProps) {
 
         {/* Links */}
         <div className={s.section}>
-          <h3 className={s.title}>Quick Links</h3>
+          <h3 className={s.title}>{messages.linksTitle}</h3>
           <ul className={s.list}>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services">{messages.links.services}</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">{messages.links.projects}</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#hireMe">{messages.links.contact}</a>
             </li>
           </ul>
         </div>
 
         {/* Contact */}
         <div className={s.section}>
-          <h3 className={s.title}>Contact</h3>
+          <h3 className={s.title}>{messages.contactTitle}</h3>
           <ul className={s.list}>
             <li>
               Email:{' '}

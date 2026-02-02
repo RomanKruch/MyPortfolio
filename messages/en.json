@@ -104,11 +104,21 @@
     "descriptionLabel": "Short description",
     "descriptionPlaceholder": "Describe your project…*",
     "sendingBtn": "Sending…",
-    "sendBtn": "Send Request"
+    "sendBtn": "Send Request",
+    "acceptMsg": "✅ Sent! I will reply soon.",
+    "networkErrorMsg": "Network error.",
+    "validErrorMsg": "Validation error."
   },
   "Footer": {
     "text": "Building modern websites and applications with passion for design and performance.",
     "location": "Location: Kyiv, Ukraine",
-    "copyright": "All rights reserved."
+    "copyright": "All rights reserved.",
+    "linksTitle": "Quick Links",
+    "links": {
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact"
   }
 }

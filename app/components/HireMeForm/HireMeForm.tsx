@@ -36,13 +36,13 @@ export default function HireMeForm({ messages }: IProps) {
       });
       const data = await res.json();
       if (res.ok) {
-        setMsg('✅ Sent! I will reply soon.');
+        setMsg(messages.acceptMsg);
         setForm(initial);
       } else {
-        setMsg(data?.message || 'Validation error.');
+        setMsg(data?.message || messages.validErrorMsg);
       }
     } catch {
-      setMsg('Network error.');
+      setMsg(messages.networkErrorMsg);
     } finally {
       setLoading(false);
     }

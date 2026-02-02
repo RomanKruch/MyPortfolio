@@ -41,7 +41,7 @@ const services: {
 
 export default function Services({ messages }: IProps) {
   return (
-    <section>
+    <section id='services'>
       <h2>{messages.title}</h2>
       <ul className={s.list}>
         {services.map(item => {

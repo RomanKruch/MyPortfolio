@@ -47,8 +47,8 @@
 
 .input:focus {
     outline: none;
-    /* border: 1px solid var(--hover_color); */
-    box-shadow: 1px 1px 5px #666;
+    border: 1px solid var(--hover_color);
+    box-shadow: 1px 1px 5px var(--hover_color);
 }
 
 .textarea {
@@ -83,4 +83,50 @@
     font-family: var(--font-rob);
     text-align: center;
     grid-column: span 2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+   .label {
+    font-size: 16px;
+   }
+
+   .input {
+    font-size: 15px;
+   }
+
+   .textarea_label {
+    font-size: 16px;
+   }
+}
+/* Mobile */
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        grid-column: 1;
+    }
+
+    .textarea {
+        min-height: 250px;
+    }
+
+    .label {
+    font-size: 14px;
+   }
+
+   .input {
+    font-size: 13px;
+   }
+
+   .textarea_label {
+    font-size: 14px;
+   }
+
+   .message {
+    font-size: 16px;
+    grid-column: 1;
+   }
 }

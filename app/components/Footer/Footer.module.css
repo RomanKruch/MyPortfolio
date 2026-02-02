@@ -18,7 +18,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 40px;
 
@@ -31,11 +31,11 @@
 
 .text {
   font-size: 18px;
-    color: #d1d5db;
+  color: #d1d5db;
 }
 
 .title {
-    font-family: var(--font-mons);
+  font-family: var(--font-mons);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -78,8 +78,31 @@
    gap: 5px;
 }
 
+.location svg {
+  width: 25px;
+  height: 25px;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
+
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .list a {
+    font-size: 14px;
+  }
 }
+
