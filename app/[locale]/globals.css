@@ -6,15 +6,20 @@
 
 html {
   scroll-behavior: smooth;
-  /* max-width: 100vw; */
-  /* overflow-x: hidden; */
 }
 
 body {
   color: var(--text_color);
-  /* background: red; */
   padding-top: 50px;
+ background: radial-gradient(
+    ellipse at 30% 20%,
+    #f7fbff 0%,
+    #e5effc 45%,
+    #d3e1f5 75%,
+    #c0d4ee 100%
+  );
 }
+
 
 * {
   box-sizing: border-box;

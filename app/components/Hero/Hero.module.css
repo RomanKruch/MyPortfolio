@@ -10,6 +10,7 @@
     font-weight: 500;
     font-family: var(--font-mons);
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .title {

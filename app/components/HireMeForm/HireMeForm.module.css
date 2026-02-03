@@ -68,7 +68,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: var(--font-rob);
-  background-color: transparent;
+    background: linear-gradient(180deg, rgba(224,231,255,0.2), rgba(255,255,255,0.5));
   color: var(--text_color);
   border: 1px solid #666666;
 }

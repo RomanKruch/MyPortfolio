@@ -24,7 +24,9 @@ export default function ProjectsItem({
 }: IProps) {
   return (
     <li className={s.item}>
-      <Image src={img} alt="Preview of project" className={s.img} />
+      <a href={liveHref} target="_blank">
+        <Image src={img} alt="Preview of project" className={s.img} />
+      </a>
       <h3 className={s.title}>{title}</h3>
       <p className={s.description}>{description}</p>
       <div className={s.btn_wrap}>

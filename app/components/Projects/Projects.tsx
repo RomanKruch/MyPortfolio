@@ -19,20 +19,20 @@ const projects: {
   {
     id: 'dreamHouse',
     img: dreamHousePrev,
-    liveHref: '/',
-    hubHref: '/',
+    liveHref: 'https://romankruch.github.io/DreamHouse',
+    hubHref: 'https://github.com/RomanKruch/DreamHouse',
   },
   {
     id: 'bruden',
     img: brudenPrev,
-    liveHref: '/',
-    hubHref: '/',
+    liveHref: 'https://romankruch.github.io/bruden',
+    hubHref: 'https://github.com/RomanKruch/bruden',
   },
   {
     id: 'travel',
     img: travelPrev,
-    liveHref: '/',
-    hubHref: '/',
+    liveHref: 'https://romankruch.github.io/Travel',
+    hubHref: 'https://github.com/RomanKruch/Travel',
   },
 ];
 
