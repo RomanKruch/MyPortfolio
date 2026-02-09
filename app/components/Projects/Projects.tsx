@@ -3,6 +3,7 @@ import ProjectsItem from './ProjectsItem';
 import brudenPrev from '../../assets/bruden_prev.jpg';
 import dreamHousePrev from '../../assets/dreamHouse_prev.jpg';
 import travelPrev from '../../assets/travel_prev.jpg';
+import brainBrewPrev from '../../assets/brainBrewPrev.png';
 import { Messages, ProjectsItemsKeys } from '../../../messages/types';
 import { StaticImageData } from 'next/image';
 
@@ -33,6 +34,12 @@ const projects: {
     img: travelPrev,
     liveHref: 'https://romankruch.github.io/Travel',
     hubHref: 'https://github.com/RomanKruch/Travel',
+  },
+  {
+    id: 'brainBrew',
+    img: brainBrewPrev,
+    hubHref: 'https://github.com/RomanKruch/BrainBrew',
+    liveHref: 'https://t.me/brainbrew8117_bot',
   },
 ];
 

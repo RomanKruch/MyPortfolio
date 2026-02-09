@@ -11,15 +11,19 @@
     "projects": {
       "dreamHouse": {
         "title": "Dream House",
-        "description": "Apartment Renovation Landing Page – modern design with dynamic elements, interactive gallery, and engaging features to attract clients."
+        "description": "A modern and visually appealing Apartment Renovation Landing Page with dynamic interactive elements, a rich gallery, and engaging features that make the user experience enjoyable. This fully functional and responsive project is part of my portfolio, demonstrating my skills in creating professional interfaces and attention to detail, though it is not a real commercial product."
       },
       "bruden": {
         "title": "Bruden",
-        "description": "Clothing & Accessories E-commerce Store – fully functional online shop with user registration, personal accounts, and an easy-to-use admin panel."
+        "description": "An elegant and responsive Clothing & Accessories E-commerce Store, featuring user registration, personal accounts, a product catalog, shopping cart, and a full admin panel. This fully functional project showcases my ability to implement complex e-commerce solutions for a seamless shopping experience. It is a portfolio project and not an actual online store."
       },
       "travel": {
         "title": "Travel",
-        "description": "Tour Search Website – simple and user-friendly service for quickly finding exciting travel opportunities."
+        "description": "A simple, user-friendly Tour Search Website designed to help users quickly find and explore exciting travel opportunities. With intuitive search filters, tour previews, and interactive elements, this fully functional and responsive project highlights my skills in building modern web applications. Part of my portfolio, it is fully operational but created for demonstration purposes."
+      },
+      "brainBrew": {
+        "title": "BrainBrew",
+        "description": "Meet my fully functional and interactive Telegram bot, available to everyone! It is designed to make your day easier and more enjoyable. Get instant weather forecasts, stay updated with the latest news, and enjoy personalized texts for learning and self-development. This portfolio project demonstrates my skills in API integration, user interaction design, and building practical, modern applications. Fully working and ready to showcase the capabilities of modern bot development."
       }
     }
   },
@@ -76,6 +80,16 @@
           "Admin dashboard"
         ],
         "linkText": "Get solution"
+      },
+      "telegramBot": {
+        "title": "Telegram Bot Development",
+        "subtitle": "Smart and automated bots for your business",
+        "features": [
+          "Custom bot logic",
+          "API integrations",
+          "Fast and secure performance"
+        ],
+        "linkText": "Order a bot"
       }
     }
   },
@@ -90,6 +104,7 @@
       "E-commerce",
       "Web App (Full-stack)",
       "Backend API",
+      "Telegram Bot",
       "Optimization / Fixes",
       "Other"
     ],

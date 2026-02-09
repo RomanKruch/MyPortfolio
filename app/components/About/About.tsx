@@ -1,6 +1,6 @@
 import s from './About.module.css';
 import Image from 'next/image';
-import img from '../../assets/hero.png';
+import img from '../../assets/About.png';
 import { Messages } from '../../../messages/types';
 
 interface IProps {

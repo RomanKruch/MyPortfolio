@@ -2,7 +2,7 @@ import s from './Services.module.css';
 import WebDevIcon from '../../assets/icons/WebDev.icon';
 import BackApiIcon from '../../assets/icons/BackApi.icon';
 import CommerceIcon from '../../assets/icons/Commerce.icon';
-// import WebSeoIcon from '../../assets/icons/WebSeo.icon';
+import TelegramIcon from '../../assets/icons/TelegramIcon';
 import ServicesItem from './ServicesItem';
 import { Messages, ServicesItemsKeys } from '../../../messages/types';
 import { JSX } from 'react';
@@ -31,17 +31,16 @@ const services: {
     icon: CommerceIcon,
     linkHref: '#hireMe',
   },
-  // {
-  //   title: 'Website Optimization',
-  //   subtitle: 'Faster, SEO-friendly websites',
-  //   features: ['SEO improvements', 'Performance tuning', 'Better UX'],
-  //   icon: WebSeoIcon,
-  // },
+  {
+    id: 'telegramBot',
+    icon: TelegramIcon,
+    linkHref: '#hireMe',
+  },
 ];
 
 export default function Services({ messages }: IProps) {
   return (
-    <section id='services'>
+    <section id="services">
       <h2>{messages.title}</h2>
       <ul className={s.list}>
         {services.map(item => {
