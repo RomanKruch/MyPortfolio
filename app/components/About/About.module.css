@@ -20,6 +20,10 @@
     margin-bottom: 15px;
 }
 
+.description p {
+  text-indent: 2em; 
+}
+
 .list {
    display: flex;
    justify-content: space-between;

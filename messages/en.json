@@ -29,7 +29,10 @@
   },
   "About": {
     "title": "About Me",
-    "description": "I’m Roman, a passionate Web Developer with a focus on building modern, fast, and user-friendly applications.<br /> With expertise in React, Next.js, and NestJS, I create seamless front-end experiences and robust back-end systems.<br /> Beyond coding, I’m constantly exploring new technologies to stay ahead in the ever-evolving tech world. My goal is simple — to deliver clean, maintainable, and impactful digital solutions that make a difference.",
+    "description": [
+      "I’m Roman — a web developer who enjoys creating modern, fast, and user-friendly digital products. I work with React, Next.js, and NestJS, combining thoughtful frontend design with reliable backend systems.",
+      "I constantly learn and explore new technologies to keep my solutions relevant and effective. My goal is to build clean, clear, and scalable products that truly make a difference."
+    ],
     "items": [
       {
         "title": "3+",
