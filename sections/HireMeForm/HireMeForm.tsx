@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import s from './HireMeForm.module.css';
-import { Messages } from '../../../messages/types';
+import { Messages } from '../../messages/types';
 
 interface IProps {
   messages: Messages['HireMe'];

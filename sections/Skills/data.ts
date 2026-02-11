@@ -1,4 +1,3 @@
-import s from './Skills.module.css';
 import ReactIcon from '../../assets/icons/React.icon';
 import NextjsIcon from '../../assets/icons/Nextjs.icon';
 import TypescriptIcon from '../../assets/icons/Typescript.icon';
@@ -11,14 +10,8 @@ import GithubIcon from '../../assets/icons/Github.icon';
 import PostmanIcon from '../../assets/icons/Postman.icon';
 import FigmaIcon from '../../assets/icons/Figma.icon';
 import CloudinaryIcon from '../../assets/icons/Cloudinary.icon';
-import SkillsItem from './SkillsItem';
-import { Messages } from '../../../messages/types';
 
-interface IProps {
-  messages: Messages['Skills'];
-}
-
-const skills = {
+export const skills = {
   frontend: [
     { name: 'React', icon: ReactIcon, link: 'https://react.dev' },
     { name: 'Next.js', icon: NextjsIcon, link: 'https://nextjs.org' },
@@ -38,38 +31,3 @@ const skills = {
     { name: 'Cloudinary', icon: CloudinaryIcon, link: 'https://cloudinary.com' },
   ],
 };
-
-export default function Skills({ messages }: IProps) {
-  return (
-    <section>
-      <h2>{messages.title}</h2>
-
-      <div className={s.wrap}>
-        <h3 className={s.title}>Frontend</h3>
-        <ul className={s.list}>
-          {skills.frontend.map(item => (
-            <SkillsItem Icon={item.icon} link={item.link} title={item.name} key={item.name} />
-          ))}
-        </ul>
-      </div>
-
-      <div className={s.wrap}>
-        <h3 className={s.title}>Backend</h3>
-        <ul className={s.list}>
-          {skills.backend.map(item => (
-            <SkillsItem Icon={item.icon} link={item.link} title={item.name} key={item.name} />
-          ))}
-        </ul>
-      </div>
-
-      <div className={s.wrap}>
-        <h3 className={s.title}>Tools</h3>
-        <ul className={s.list}>
-          {skills.tools.map(item => (
-            <SkillsItem Icon={item.icon} link={item.link} title={item.name} key={item.name} />
-          ))}
-        </ul>
-      </div>
-    </section>
-  );
-}

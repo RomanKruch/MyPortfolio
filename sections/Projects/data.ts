@@ -1,22 +1,18 @@
-import s from './Projects.module.css';
-import ProjectsItem from './ProjectsItem';
+import { ProjectsItemsKeys } from '../../messages/types';
+import { StaticImageData } from 'next/image';
 import brudenPrev from '../../assets/bruden_prev.jpg';
 import dreamHousePrev from '../../assets/dreamHouse_prev.jpg';
 import travelPrev from '../../assets/travel_prev.jpg';
 import brainBrewPrev from '../../assets/brainBrewPrev.png';
-import { Messages, ProjectsItemsKeys } from '../../../messages/types';
-import { StaticImageData } from 'next/image';
 
-interface IProps {
-  messages: Messages['Projects'];
-}
-
-const projects: {
+interface IProjectItem {
   id: ProjectsItemsKeys;
   img: StaticImageData;
   liveHref: string;
   hubHref: string;
-}[] = [
+}
+
+export const projects: IProjectItem[] = [
   {
     id: 'dreamHouse',
     img: dreamHousePrev,
@@ -42,30 +38,3 @@ const projects: {
     liveHref: 'https://t.me/brainbrew8117_bot',
   },
 ];
-
-export default function Projects({ messages }: IProps) {
-  return (
-    <section id="projects">
-      <h2>{messages.title}</h2>
-
-      <ul className={s.list}>
-        {projects.map(item => {
-          const text = messages.projects[item.id];
-
-          return (
-            <ProjectsItem
-              img={item.img}
-              title={text.title}
-              description={text.description}
-              hubHref={item.hubHref}
-              liveHref={item.liveHref}
-              githubBtn={messages.githubBtn}
-              liveBtn={messages.liveBtn}
-              key={text.title}
-            />
-          );
-        })}
-      </ul>
-    </section>
-  );
-}

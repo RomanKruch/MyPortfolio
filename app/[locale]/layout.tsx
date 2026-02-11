@@ -16,6 +16,7 @@ const RobotoSans = Roboto({
 
 export const metadata: Metadata = {
   title: 'Portfolio',
+  
 };
 
 interface IProps {

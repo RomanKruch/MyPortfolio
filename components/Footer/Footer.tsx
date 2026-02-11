@@ -1,7 +1,6 @@
 import s from './Footer.module.css';
-import { Messages } from '../../../messages/types';
+import { Messages } from '../../messages/types';
 import UkraineIcon from '../../assets/icons/UkraineIcon';
-import { style } from 'framer-motion/client';
 
 interface IProps {
   messages: Messages['Footer'];

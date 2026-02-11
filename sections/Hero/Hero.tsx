@@ -1,9 +1,8 @@
 import s from './Hero.module.css';
 import Image from 'next/image';
-// import img from '../../assets/hero2.png';
 import img from '../../assets/Hero_img.png';
-import LinkBtn from '../LinkBtn/LinkBtn';
-import { Messages } from '../../../messages/types';
+import LinkBtn from '../../components/LinkBtn/LinkBtn';
+import { Messages } from '../../messages/types';
 
 interface IProps {
   messages: Messages['Hero'];

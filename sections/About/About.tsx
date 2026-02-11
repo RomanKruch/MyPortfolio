@@ -1,7 +1,7 @@
 import s from './About.module.css';
 import Image from 'next/image';
 import img from '../../assets/About.png';
-import { Messages } from '../../../messages/types';
+import { Messages } from '../../messages/types';
 
 interface IProps {
   messages: Messages['About'];
@@ -14,11 +14,11 @@ export default function About({ messages }: IProps) {
 
       <div className={s.wrap}>
         <h2>{messages.title}</h2>
-        <p className={s.description}>
+        <div className={s.description}>
           {messages.description.map((text, i) => (
             <p key={i}>{text}</p>
           ))}
-        </p>
+        </div>
         <ul className={s.list}>
           {messages.items.map(item => (
             <li className={s.item} key={item.title}>

@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import s from './Projects.module.css';
-import LinkBtn from '../LinkBtn/LinkBtn';
+import LinkBtn from '../../components/LinkBtn/LinkBtn';
 
 interface IProps {
   img: StaticImageData;

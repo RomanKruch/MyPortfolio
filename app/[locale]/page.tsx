@@ -1,13 +1,13 @@
-import About from '../components/About/About';
-import Footer from '../components/Footer/Footer';
-import Hero from '../components/Hero/Hero';
-import HireMeForm from '../components/HireMeForm/HireMeForm';
-import Projects from '../components/Projects/Projects';
-import Services from '../components/Services/Services';
-import Skills from '../components/Skills/Skills';
+import About from '../../sections/About/About';
+import Footer from '../../components/Footer/Footer';
+import Hero from '../../sections/Hero/Hero';
+import HireMeForm from '../../sections/HireMeForm/HireMeForm';
+import Projects from '../../sections/Projects/Projects';
+import Services from '../../sections/Services/Services';
+import Skills from '../../sections/Skills/Skills';
 import styles from './page.module.css';
 import { Messages } from '../../messages/types';
-import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from '../../components/LanguageSwitcher/LanguageSwitcher';
 
 interface IProps {
   params: Promise<{ locale: string }>;
@@ -17,6 +17,7 @@ export default async function Home({ params }: IProps) {
   const { locale } = await params;
 
   const messages: Messages = (await import(`../../messages/${locale}.json`)).default;
+  
   return (
     <>
       <LanguageSwitcher />

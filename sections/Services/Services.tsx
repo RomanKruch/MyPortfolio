@@ -1,42 +1,11 @@
 import s from './Services.module.css';
-import WebDevIcon from '../../assets/icons/WebDev.icon';
-import BackApiIcon from '../../assets/icons/BackApi.icon';
-import CommerceIcon from '../../assets/icons/Commerce.icon';
-import TelegramIcon from '../../assets/icons/TelegramIcon';
 import ServicesItem from './ServicesItem';
-import { Messages, ServicesItemsKeys } from '../../../messages/types';
-import { JSX } from 'react';
+import { Messages } from '../../messages/types';
+import { services } from './data';
 
 interface IProps {
   messages: Messages['Services'];
 }
-
-const services: {
-  id: ServicesItemsKeys;
-  icon: () => JSX.Element;
-  linkHref: string;
-}[] = [
-  {
-    id: 'webDev',
-    icon: WebDevIcon,
-    linkHref: '#hireMe',
-  },
-  {
-    id: 'backApi',
-    icon: BackApiIcon,
-    linkHref: '#hireMe',
-  },
-  {
-    id: 'commerce',
-    icon: CommerceIcon,
-    linkHref: '#hireMe',
-  },
-  {
-    id: 'telegramBot',
-    icon: TelegramIcon,
-    linkHref: '#hireMe',
-  },
-];
 
 export default function Services({ messages }: IProps) {
   return (

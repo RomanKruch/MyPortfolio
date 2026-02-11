@@ -1,4 +1,4 @@
-import LinkBtn from '../LinkBtn/LinkBtn';
+import LinkBtn from '../../components/LinkBtn/LinkBtn';
 import s from './Services.module.css';
 
 interface IProps {
