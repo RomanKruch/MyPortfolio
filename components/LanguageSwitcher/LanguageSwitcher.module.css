@@ -1,0 +1,53 @@
+.switcher {
+    position: fixed;
+    z-index: 100;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 5px ;
+    padding: 8px 12px;
+    background: linear-gradient(45deg, rgba(224,231,255,0.5), rgba(255,255,255,0.7));
+    border: 1px solid #666666;
+    border-radius: 31px;
+}
+
+.btn { 
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(224,231,255,0.3), rgba(255,255,255,0.5));
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+   .btn {
+    width: 35px;
+    height: 35px;
+   }
+
+   .switcher {
+    top: 25px;
+    right: 25px;
+    padding: 6px 10px;
+   }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .btn {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+   }
+
+   .switcher {
+    top: 15px;
+    right: 15px;
+    padding: 4px 8px;
+   }
+}

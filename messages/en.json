@@ -1,0 +1,142 @@
+{
+  "Hero": {
+    "meeting": "Hi, I’m Roman 👋",
+    "hireBtn": "Hire me",
+    "projectsBtn": "View Projects"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "liveBtn": "Live",
+    "githubBtn": "GitHub",
+    "projects": {
+      "dreamHouse": {
+        "title": "Dream House",
+        "description": "A modern and visually appealing Apartment Renovation Landing Page with dynamic interactive elements, a rich gallery, and engaging features that make the user experience enjoyable. This fully functional and responsive project is part of my portfolio, demonstrating my skills in creating professional interfaces and attention to detail, though it is not a real commercial product."
+      },
+      "bruden": {
+        "title": "Bruden",
+        "description": "An elegant and responsive Clothing & Accessories E-commerce Store, featuring user registration, personal accounts, a product catalog, shopping cart, and a full admin panel. This fully functional project showcases my ability to implement complex e-commerce solutions for a seamless shopping experience. It is a portfolio project and not an actual online store."
+      },
+      "travel": {
+        "title": "Travel",
+        "description": "A simple, user-friendly Tour Search Website designed to help users quickly find and explore exciting travel opportunities. With intuitive search filters, tour previews, and interactive elements, this fully functional and responsive project highlights my skills in building modern web applications. Part of my portfolio, it is fully operational but created for demonstration purposes."
+      },
+      "brainBrew": {
+        "title": "BrainBrew",
+        "description": "Meet my fully functional and interactive Telegram bot, available to everyone! It is designed to make your day easier and more enjoyable. Get instant weather forecasts, stay updated with the latest news, and enjoy personalized texts for learning and self-development. This portfolio project demonstrates my skills in API integration, user interaction design, and building practical, modern applications. Fully working and ready to showcase the capabilities of modern bot development."
+      }
+    }
+  },
+  "About": {
+    "title": "About Me",
+    "description": [
+      "I’m Roman — a web developer who enjoys creating modern, fast, and user-friendly digital products. I work with React, Next.js, and NestJS, combining thoughtful frontend design with reliable backend systems.",
+      "I constantly learn and explore new technologies to keep my solutions relevant and effective. My goal is to build clean, clear, and scalable products that truly make a difference."
+    ],
+    "items": [
+      {
+        "title": "3+",
+        "subtitle": "Completed projects"
+      },
+      {
+        "title": "1+",
+        "subtitle": "Year coding experience"
+      },
+      {
+        "title": "100%",
+        "subtitle": "Client satisfaction"
+      }
+    ]
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Services": {
+    "title": "Services",
+    "items": {
+      "webDev": {
+        "title": "Web Development",
+        "subtitle": "Modern and responsive websites",
+        "features": [
+          "Clean UI design",
+          "Responsive layouts",
+          "Optimized performance"
+        ],
+        "linkText": "Get a quote"
+      },
+      "backApi": {
+        "title": "Backend API",
+        "subtitle": "Secure and scalable solutions",
+        "features": [
+          "REST APIs",
+          "JWT authentication",
+          "Database integration"
+        ],
+        "linkText": "Request API"
+      },
+      "commerce": {
+        "title": "E-commerce Solutions",
+        "subtitle": "Online stores with full functionality",
+        "features": [
+          "Product management",
+          "Payment integration",
+          "Admin dashboard"
+        ],
+        "linkText": "Get solution"
+      },
+      "telegramBot": {
+        "title": "Telegram Bot Development",
+        "subtitle": "Smart and automated bots for your business",
+        "features": [
+          "Custom bot logic",
+          "API integrations",
+          "Fast and secure performance"
+        ],
+        "linkText": "Order a bot"
+      }
+    }
+  },
+  "HireMe": {
+    "title": "Hire me",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name*",
+    "telegramPlaceholder": "@username (optional)",
+    "projectTypeLabel": "Project Type",
+    "projectTypeOptions": [
+      "Landing / Website",
+      "E-commerce",
+      "Web App (Full-stack)",
+      "Backend API",
+      "Telegram Bot",
+      "Optimization / Fixes",
+      "Other"
+    ],
+    "budgetLabel": "Budget range",
+    "timelineLabel": "Timeline",
+    "timelineOptions": [
+      "1-2 weeks",
+      "2-4 weeks",
+      "1-2 months",
+      "Not sure"
+    ],
+    "descriptionLabel": "Short description",
+    "descriptionPlaceholder": "Describe your project…*",
+    "sendingBtn": "Sending…",
+    "sendBtn": "Send Request",
+    "acceptMsg": "✅ Sent! I will reply soon.",
+    "networkErrorMsg": "Network error.",
+    "validErrorMsg": "Validation error."
+  },
+  "Footer": {
+    "text": "Building modern websites and applications with passion for design and performance.",
+    "location": "Location: Kyiv, Ukraine",
+    "copyright": "All rights reserved.",
+    "linksTitle": "Quick Links",
+    "links": {
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "contactTitle": "Contact"
+  }
+}
