@@ -59,12 +59,14 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ ok: true });
-  } catch (e: any) {
-    if (e?.issues) {
-      console.log(e?.issues);
-      return NextResponse.json({ ok: false, errors: e.issues }, { status: 400 });
+  } catch (e: unknown) {
+    if (typeof e === 'object' && e !== null && 'issues' in e) {
+      const error = e as { issues: unknown };
+
+      console.log(error.issues);
+      return NextResponse.json({ ok: false, errors: error.issues }, { status: 400 });
     }
-    console.error(e);
-    return NextResponse.json({ ok: false, message: 'Server error' }, { status: 500 });
+
+    return NextResponse.json({ ok: false, message: 'Something went wrong' }, { status: 500 });
   }
 }
