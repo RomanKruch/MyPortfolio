@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import brudenPrev from '../../assets/bruden_prev.jpg';
 import dreamHousePrev from '../../assets/dreamHouse_prev.jpg';
 import travelPrev from '../../assets/travel_prev.jpg';
-import brainBrewPrev from '../../assets/brainBrewPrev.png';
+import brainBrewPrev from '../../assets/brainBrew_prev.jpg';
 
 interface IProjectItem {
   id: ProjectsItemsKeys;
